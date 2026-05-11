@@ -34,13 +34,13 @@ export default async function Home() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/books"
+              href="/watches"
               className="rounded-md bg-[#c9a45d] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#17140f] transition hover:bg-[#d8b973]"
             >
               Shop Watches
             </Link>
             <Link
-              href={`/books/${featured.id}`}
+              href={`/watches/${featured.id}`}
               className="rounded-md border border-[#c9a45d] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#f7f7f2] transition hover:bg-[#c9a45d] hover:text-[#17140f]"
             >
               View Featured
@@ -58,7 +58,7 @@ export default async function Home() {
             <h2 className="mt-2 text-3xl font-bold">Signature watches</h2>
           </div>
           <Link
-            href="/books"
+            href="/watches"
             className="text-sm font-semibold uppercase tracking-[0.14em] text-[#17140f] underline decoration-[#c9a45d] underline-offset-8"
           >
             Browse Collection
@@ -68,7 +68,7 @@ export default async function Home() {
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           {highlights.map((product) => (
             <Link
-              href={`/books/${product.id}`}
+              href={`/watches/${product.id}`}
               key={product.id}
               className="group rounded-lg border border-[#ddd6c8] bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:border-[#c9a45d]"
             >
