@@ -13,6 +13,12 @@ export async function generateMetadata({
   const { id } = await params;
   const product = await fetchSingleProduct(id);
 
+  if (!product) {
+    return {
+      title: "Watch Not Found | Chrono Atelier",
+    };
+  }
+
   return {
     title: `${product.name} | Chrono Atelier`,
     description: product.description,

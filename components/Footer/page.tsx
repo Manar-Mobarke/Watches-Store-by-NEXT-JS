@@ -14,7 +14,7 @@ function Footer() {
         </div>
 
         <div className="flex gap-4 text-sm text-[#cfc7b8]">
-          <Link className="transition hover:text-white" href="/books">
+          <Link className="transition hover:text-white" href="/watches">
             Collection
           </Link>
           <Link className="transition hover:text-white" href="/contact-us">
